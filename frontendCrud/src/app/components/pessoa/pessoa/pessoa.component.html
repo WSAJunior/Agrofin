@@ -1,0 +1,53 @@
+<p>pessoa works!</p><mat-card>
+  <mat-card-title>Cadastro de Pessoa</mat-card-title>
+  <form>
+
+    <mat-form-field>
+      <input matInput placeholder="CPF/CNPJ">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Nome">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="cep">
+      <input matInput placeholder="CEP">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Logradouro">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Numero">
+    </mat-form-field>
+
+    <br>
+
+    <mat-form-field class="complemento">
+      <input matInput placeholder="Complemento">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Bairro">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Cidade">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Estado">
+    </mat-form-field>
+  </form>
+
+  <button mat-raise-button (click)="btnSalvar()" color="primary">
+    Salvar
+  </button>
+
+  <button mat-raise-button (click)="btnCancelar()">
+    Cancelar
+  </button>
+</mat-card>
