@@ -1,0 +1,51 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 5.89
+    },
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 5.89
+    },
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 5.89
+    }
+  ],
+  "titulo": [
+    {
+      "TITULO_ID": 1,
+      "TITULO_DATA": "25-12-2021",
+      "TITULO_VALOR_EXTENSO": "sete",
+      "TITULO_CIDADE": "Goiania",
+      "TITULO_ESTADO": "GO",
+      "TITULO_DESCRICAO": "luta",
+      "PAGADOR_ID": 2,
+      "RECEBEDOR_ID": 3
+    },
+    {
+      "TITULO_ID": 1,
+      "TITULO_DATA": "25-12-2021",
+      "TITULO_VALOR_EXTENSO": "sete",
+      "TITULO_CIDADE": "Goiania",
+      "TITULO_ESTADO": "GO",
+      "TITULO_DESCRICAO": "luta",
+      "PAGADOR_ID": 2,
+      "RECEBEDOR_ID": 3
+    },
+    {
+      "TITULO_ID": 1,
+      "TITULO_DATA": "25-12-2021",
+      "TITULO_VALOR_EXTENSO": "sete",
+      "TITULO_CIDADE": "Goiania",
+      "TITULO_ESTADO": "GO",
+      "TITULO_DESCRICAO": "luta",
+      "PAGADOR_ID": 2,
+      "RECEBEDOR_ID": 3
+    }
+  ]
+}
