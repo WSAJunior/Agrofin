@@ -1,45 +1,45 @@
 <mat-card-title>Cadastro de Título </mat-card-title>
-<mat-card>
+<mat-card >
     <form>
         <h2 style="margin-bottom: 0px;">Recebedor</h2>
         <mat-form-field>
-            <input matInput placeholder="CPF/CNPJ">
+            <input matInput placeholder="CPF/CNPJ" name="cfcjrecebedor"><!-- [(ngModel)]="recebedor.PAGADOR_CPF_CNPJ"// VERIFICAR A QUESTAO DA DO GET NESSE CAMPO-->
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="Nome">
+            <input matInput placeholder="Nome" name="nomerecebedor"><!-- [(ngModel)]="recebedor.PAGADOR_CPF_CNPJ"// VERIFICAR A QUESTAO DA DO GET NESSE CAMPO-->
         </mat-form-field>
 
         <br>
 
         <h2 style="margin-bottom: 0px;">Pagador</h2>
         <mat-form-field>
-            <input matInput placeholder="CPF/CNPJ">
+            <input matInput placeholder="CPF/CNPJ" name="cfcjpagador"> <!-- [(ngModel)]="pagador.PAGADOR_CPF_CNPJ"// VERIFICAR A QUESTAO DA DO GET NESSE CAMPO-->
         </mat-form-field>
 
         <mat-form-field>
-            <input matInput placeholder="Nome">
+            <input matInput placeholder="Nome" name="nomepagador"> <!-- [(ngModel)]="pagador.PAGADOR_NOME"// VERIFICAR A QUESTAO DA DO GET NESSE CAMPO -->
         </mat-form-field>
 
         <br>
         <H2 style="margin-bottom: 0px;" >Título</H2>
         <mat-form-field>
-            <input matInput placeholder="Valor do Documento">
+            <input matInput placeholder="Valor do Documento" name="valor" > <!-- [(ngModel)]="titulo.TITULO_VALOR"-->
         </mat-form-field>
         <mat-form-field>
-            <input matInput placeholder="Descrição">
+            <input matInput placeholder="Descrição" name="descricao"> <!--[(ngModel)]="titulo.TITULO_DESCRICAO"-->
         </mat-form-field>
         <mat-form-field>
-            <input matInput elements of type="date">
+            <input matInput elements of type="date" name="data">  <!-- VERIFICAR A QUESTÃO DA DATA SER SALVA -->
         </mat-form-field>
         <br>
     </form>
 
-    <button mat-raised-button>
+    <button mat-raised-button (click)='createTitulo()'>
         Salvar
     </button>
 
-    <button mat-raised-button style="margin:  10px;">
+    <button mat-raised-button (click)='cancel()'>
         Cancelar
     </button>
 </mat-card>
