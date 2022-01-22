@@ -1,13 +1,13 @@
 import { Recebedor } from './../recebedor/recebedor.model';
 export interface Titulo {
 
-  TITULO_ID?: number,
-  RECEBEDOR_ID?: number,
-  PAGADOR_ID?: number,
-  TITULO_VALOR: number | null,
-  TITULO_DESCRICAO: string,
-  TITULO_DATA: Date,
-  TITULO_VALOR_EXTENSO: string,
-  TITULO_CIDADE: string,
-  TITULO_ESTADO: string,
+  Titulo_Id?: number,
+  Recebedor_Id?: number,
+  Pagador_Id?: number,
+  Titulo_Valor: number | null,
+  Titulo_Descricao: string,
+  Titulo_Data: string,
+  Titulo_Valor_Extenso: string,
+  Titulo_Cidade: string,
+  Titulo_Estado: string,
 }

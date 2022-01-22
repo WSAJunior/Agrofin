@@ -14,32 +14,36 @@ import { Router } from '@angular/router';
 })
 export class TituloComponent implements OnInit {
 
-/*   Titulo: Titulo = {
-    TITULO_RECEBEDORCPF: '',
-    TITULO_RECEBEDORNOME: '',
-    TITULO_PAGADORCPF: '',
-    TITULO_PAGADORNOME: '',
-    TITULO_VALOR: null,
-    TITULO_DESCRICAO: ''
-  } */
+    titulo: Titulo = {
+    Titulo_Valor: null,
+    Titulo_Descricao: '',
+    Titulo_Data: '',
+    Titulo_Valor_Extenso: '',
+    Titulo_Cidade: '',
+    Titulo_Estado: ''
+  } 
 
-  constructor(private TituloService: TituloService, private router: Router,
-    private RecebedorService: RecebedorService, private PagadorService: PagadorService) { }
+
+  constructor(private tituloService: TituloService, private router: Router
+    /* private RecebedorService: RecebedorService, private PagadorService: PagadorService */) { }
 
   ngOnInit(): void {
   }
   
   createTitulo(): void {
-    this.router.navigate(['/'])
-    this.TituloService.showMessage('Titulo Cadastrado')
+    this.tituloService.create(this.titulo).subscribe( titulo => {
+      this.tituloService.showMessage('Titulo Cadastrado')
+      this.router.navigate(['/'])
+
+    })
+  } 
+    
+    /*
     this.RecebedorService.showOnConsole('Criou um Recebedor')
     this.PagadorService.showOnConsole('Criou um Pagador')
-    
-    /*this.TituloService.create(this.Titulo).subscribe(() => {}) 
       this.RecebedorService.create(this.Recebedor).subscribe(() => {})
       this.PagadorService.create(this.Pagador).subscribe(() => {})
     */
-  }
   
   cancel(): void {
     this.router.navigate(['/'])

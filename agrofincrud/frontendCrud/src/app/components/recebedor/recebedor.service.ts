@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 })
 export class RecebedorService {
 
-  /*baseUrl = API RECEBEDOR */
+ baseUrl ="http://localhost:3001/products"
 
   constructor(private http: HttpClient) { }
 

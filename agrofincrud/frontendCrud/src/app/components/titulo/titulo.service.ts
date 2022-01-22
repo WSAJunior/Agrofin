@@ -1,9 +1,9 @@
 import { PagadorService } from './../pagador/pagador.service';
 import { RecebedorService } from './../recebedor/recebedor.service';
-import { Observable } from 'rxjs';
 import { Titulo } from './titulo.model';
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 
@@ -12,10 +12,10 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class TituloService {
 
-  baseUrl ="http://localhost:3001/titulo"
+  baseUrl ="http://localhost:3001/products"
 
-  constructor(private snackBar: MatSnackBar, private http: HttpClient, private RecebedorService : RecebedorService,
-    private PagadorService: PagadorService) { }
+  constructor(private snackBar: MatSnackBar, private http: HttpClient /* private RecebedorService : RecebedorService,*/
+    /* private PagadorService: PagadorService */) { }
 
   showMessage(msg: string): void {
     this.snackBar.open(msg, 'X',{
@@ -24,9 +24,11 @@ export class TituloService {
       verticalPosition: "top"
     })
   }
+  create(titulo: Titulo): Observable<Titulo>{
+    return this.http.post<Titulo>(this.baseUrl, titulo) 
+  
+  }
   /* METODO DE CRIAR O TITULO
-  create(Titulo: Titulo): Observable<Titulo>{
-  return this.http.post<Titulo>(this.baseUrl, Titulo} 
   */
 /*  METODO DE PESQUISA 
     read(): Observable<Titulo[]>{

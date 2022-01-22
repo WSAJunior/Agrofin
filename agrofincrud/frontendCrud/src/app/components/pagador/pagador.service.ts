@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 })
 export class PagadorService {
 
-  /* baseUrl = API DE PAGADOR */
+  baseUrl ="http://localhost:3001/products"
 
   constructor(private http: HttpClient) { }
 

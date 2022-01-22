@@ -1,53 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": "Caneta BIC Preta",
-      "price": 5.89
-    },
-    {
-      "id": 1,
-      "name": "Caneta BIC Preta",
-      "price": 5.89
-    },
-    {
-      "id": 1,
-      "name": "Caneta BIC Preta",
-      "price": 5.89
-    },
-    {
-      "Pessoa_Cpf_Cnpj": "",
-      "Pessoa_Nome_Razao_Social": "",
-      "Endereco_Logradouro": "",
-      "Endereco_Numero": null,
-      "Endereco_Complemento": "",
-      "Endereco_Cep": "",
-      "Endereco_Bairro": "",
-      "Endereco_Cidade": "",
-      "Endereco_Estado": "",
-      "id": 2
-    },
-    {
-      "Pessoa_Cpf_Cnpj": "",
-      "Pessoa_Nome_Razao_Social": "",
-      "Endereco_Logradouro": "",
-      "Endereco_Numero": null,
-      "Endereco_Complemento": "",
-      "Endereco_Cep": "",
-      "Endereco_Bairro": "",
-      "Endereco_Cidade": "",
-      "Endereco_Estado": "",
-      "id": 3
-    }
-  ],
-  "titulo": [
-    {
-      "TITULO_RECEBEDORCPF": "12345678910",
-      "TITULO_RECEBEDORNOME": "Matheus",
-      "TITULO_PAGADORCPF": "12345678912345",
-      "TITULO_PAGADORNOME": "GRUPOMPC",
-      "TITULO_VALOR": 6000,
-      "TITULO_DESCRICAO": "Serviço de Tratorista"
+        
     }
   ]
 }
