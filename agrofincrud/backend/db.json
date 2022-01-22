@@ -1,7 +1,56 @@
 {
-  "products": [
+  "pessoa": [
     {
-        
+      "id": 1,
+      "pessoa_nome": "Matheus Pereira Castro",
+      "pesso_cpfcnpj": "00474913880",
+      "endereco": [
+        {
+          "id": 1,
+          "endereco_logradouro": "Rua Dona Stela",
+          "endereco_numero": 181,
+          "endereco_complemento": "Vila Rica Ap. 1507A",
+          "endereco_cep": "74650100",
+          "endereco_cidade": "Goiânia",
+          "endereco_estado": "GO"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "pessoa_nome": "Gupo MPC",
+      "pesso_cpfcnpj": "736658564000190",
+      "endereco": [
+        {
+          "id": 1,
+          "endereco_logradouro": "Rua Dona Stela",
+          "endereco_numero": 181,
+          "endereco_complemento": "Vila Rica Ap. 1507A",
+          "endereco_cep": "74650100",
+          "endereco_cidade": "Goiânia",
+          "endereco_estado": "GO"
+        }
+      ]
+    }
+  ],
+  "recibo": [
+    {
+      "id": 1, 
+      "recebedor":[
+        {
+          "recebedor_nome": "Matheus Pereira Castro",
+          "recebedor_cpfcnpj": "00474913880"
+        } 
+      ],
+      "pagador":[
+        {
+          "pagador_nome": "Gupo MPC",
+          "pagador_cpfcnpj": "736658564000190"
+        }
+      ],
+      "valor_recibo": 6000,
+      "descricao": "Serviço de Tratorista",
+      "data": "06/11/2019"
     }
   ]
 }
